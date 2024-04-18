@@ -2,7 +2,7 @@ module.exports.config = {
     name: "autotime",
   version: "1.0.0",
   permission: 0,
-  credits: "Nayan",
+  credits: "SHAWON",
   description: "msg",
   prefix: true, 
   category: "user", 
@@ -13,7 +13,7 @@ module.exports.config = {
 };
 const nam = [{
     timer: '12:00:00 AM',
-    message: ['~ এখন রাত ১১টা বাজে\nখাউয়া দাউয়া করে নেউ😙']
+    message: ['~ এখন রাত ১১টা বাজে\nখাওয়া দাওয়া করে নাও😙']
 },
              {
     timer: '1:00:00 AM',
