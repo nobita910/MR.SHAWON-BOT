@@ -3,7 +3,7 @@ config: {
     name: "pinterest",
     version: "1.0.0",
     permission: 0,
-    credits: "Nayan",
+    credits: "ShAWON",
     description: "image search",
     prefix: true,
     category: "with prefix",
