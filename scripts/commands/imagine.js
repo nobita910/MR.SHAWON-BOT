@@ -3,7 +3,7 @@ module.exports.config = {
     version: "1.0.5",
     permission: 0,
     prefix: true,
-    credits: "Nayan",
+    credits: "Shawon",
     description: "text to image",
     category: "prefix",
     cooldowns: 2
