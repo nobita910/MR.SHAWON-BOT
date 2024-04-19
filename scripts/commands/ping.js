@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "ping",
 	version: "1.0.4",
 	permssion: 0,
-	credits: "NAYAN",
+	credits: "ShAWON",
 	description: "Tag all members",
   prefix: true,
 	category: "Group",
