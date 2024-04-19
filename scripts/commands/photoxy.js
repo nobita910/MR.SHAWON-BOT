@@ -2,7 +2,7 @@ module.exports.config = {
   name: "photoxy",
   version: "2.0.0",
   permission: 2,
-  credits: "Nayan",
+  credits: "শাওন",
   description: "",
   prefix: true,
   category: "user",
@@ -75,7 +75,7 @@ module.exports.run = async function({ api, event, args }) {
     setTimeout(function() {
 
       return api.sendMessage({
-        body: `❐ THIS IS YOUR NAME EDIT ✌️\n\n___________________________________\n\n❐ This Bot Name : ${global.config.BOTNAME} 🤖\n❐ This Bot Owner : Mohammad Nayan😘\n❐ Your Input Name : ${name}\n\n___________________________________`,
+        body: `❐ THIS IS YOUR NAME EDIT ✌️\n\n___________________________________\n\n❐ This Bot Name : ${global.config.BOTNAME} 🤖\n❐ This Bot Owner : Shawon Sheikh 😘\n❐ Your Input Name : ${name}\n\n___________________________________`,
         attachment: fs.createReadStream(__dirname + '/cache/photoxy.jpg')
       }, threadID, messageID)
     }, 5000)
