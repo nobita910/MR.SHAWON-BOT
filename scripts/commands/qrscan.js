@@ -2,7 +2,7 @@ module.exports.config = {
   name: "scan",
   version: "1.0.0",
   permission: 0,
-  credits: "Nayan",
+  credits: "Shawon",
   description: " ",
   prefix: true, 
   category: "user", 
