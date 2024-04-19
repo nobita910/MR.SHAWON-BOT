@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "0.0.2",
 	permission: 2,
   prefix: false,
-	credits: "nayan",
+	credits: "Shawon",
 	description: "Change prefix",
 	category: "admin",
 	usages: "prefix",
