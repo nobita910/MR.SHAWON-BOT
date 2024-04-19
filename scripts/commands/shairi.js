@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "shairi", 
   version: "1.0.0", 
   permission: 0,
-  credits: "Nayan",
+  credits: "Shawon",
   description: "Random shairi video",
   prefix: true,
   category: "Media", 
