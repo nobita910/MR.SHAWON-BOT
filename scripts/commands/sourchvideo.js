@@ -2,7 +2,7 @@ module.exports.config = {
   name: "video", 
   version: "1.0.0", 
   permission: 0,
-  credits: "Nayan",
+  credits: "Shawon",
   description: "example",
   prefix: false,
   category: "Media", 
