@@ -1,14 +1,12 @@
 module.exports.config = {
-    name: "admin",
-    version: "1.0.0",
-    permission: 0,
-    credits: "nayan",
-    prefix: true,
-    description: "",
-    category: "prefix",
-    usages: "",
-    cooldowns: 5,
-    dependencies: 
+	name: "info",
+	version: "1.0.1", 
+	hasPermssion: 0,
+	credits: "Shawon Sheikh",
+	description: "Admin and Bot info.",
+	commandCategory: "Owner",
+	cooldowns: 1,
+	dependencies: 
 	{
     "request":"",
     "fs-extra":"",
@@ -24,24 +22,37 @@ const time = process.uptime(),
 		minutes = Math.floor((time % (60 * 60)) / 60),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-  
-var callback = () => api.sendMessage({body:`
---------------------------------------------
-𝐍𝐚𝐦𝐞       : 𝐌𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐲𝐚𝐧
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝐌𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐲𝐚𝐧
-𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   : 𝐈𝐬𝐥𝐚𝐦
-𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐓𝐚𝐧𝐠𝐚𝐢𝐥, 𝐃𝐡𝐚𝐤𝐚
-𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐌𝐨𝐲𝐦𝐨𝐧𝐬𝐢𝐧𝐡, 𝐃𝐡𝐚𝐤𝐚 𝐁𝐲𝐩𝐚𝐬𝐬
-𝐆𝐞𝐧𝐝𝐞𝐫.   : 𝐌𝐚𝐥𝐞
-𝐀𝐠𝐞           : 𝟏𝟖+
-𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 : 𝐒𝐢𝐧𝐠𝐥𝐞
-𝐖𝐨𝐫𝐤        : 𝐒𝐭𝐮𝐝𝐞𝐧𝐭
-𝐆𝐦𝐚𝐢𝐥       : mohammadnayan447@gmail.com
-𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: wa.me/+8801615298449
-𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/MOHAMMADNAYAN
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/www.xnxx.com169`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
-    fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/100000959749712/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
-fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
+var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
+var link =                                     
+["https://i.postimg.cc/V6Wy6wdr/Picsart-23-12-25-23-44-38-490.jpg",
+"https://i.postimg.cc/d3f5QNmZ/In-Shot-20231116-210842827.jpg",
+"https://i.postimg.cc/65SPBqYb/Picsart-24-01-04-18-28-55-394.jpg"];
+var callback = () => api.sendMessage({body:`𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 ❤🪽
+
+✰𝗕𝗢𝗧 𝗡𝗔𝗠𝗘✰: ${global.config.BOTNAME}
+
+✿︎𝗕𝗼𝘁 𝗔𝗗𝗠𝗜𝗡✿︎ ☞︎︎︎ 𝗦𝗛𝗔𝗪𝗢𝗡 𝗦𝗛𝗘𝗜𝗞𝗛
+
+༆ 𝐁𝐎𝐓 𝐎𝐰𝐧𝐞𝐫 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐈𝐃 𝐋𝐢𝐧𝐤 :\n➪ https://www.facebook.com/FAKR.USER.0 
+
+💗 𝙁𝙊𝙍 𝘼𝙉𝙔 𝙆𝙄𝙉𝘿 𝙊𝙁 𝙃𝙀𝙇𝙋  𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙊𝙉 𝙁𝘽 :\n➪ ✨𝐒𝐇𝐀𝐖𝐎𝐍 𝐒𝐇𝐄𝐈𝐊𝐇 ✨
+
+✧━━━━━━━━━━━━━━━❤🪽
+
+🔍 𝗕𝗢𝗧 𝗣𝗥𝗘𝗙𝗜𝗫❀: ➪ [ ${global.config.PREFIX} ] 
+
+
+🕐𝗨𝗣𝗧𝗜𝗠𝗘🕙 𝟚𝟜/𝟟
+
+✰𝗧𝗢𝗗𝗔𝗬 𝗜𝗦✰\n\n${juswa} 
+
+᯾𝗕𝗢𝗧 𝗜𝗦 𝗥𝘂𝗻𝗻𝗶𝗻𝗴᯾ [ ${hours}:${minutes}:${seconds} ]
+
+💟𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮 𝐅𝐨𝐫 𝐔𝐬𝐞𝐢𝐧𝐠  ${global.config.BOTNAME} 
+
+☞︎︎︎☕︎ 𝗛𝗔𝗣𝗣𝗬 𝗕𝗢𝗧 𝗨𝗦𝗘𝗥𝗦 🥳
+
+
+`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
