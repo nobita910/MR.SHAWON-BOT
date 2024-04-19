@@ -2,7 +2,7 @@ module.exports.config = {
    name: "settings",
     version: "1.0.0",
     permission: 2,
-    credits: "Nayan",
+    credits: "Shawon",
     description: "",
     prefix: true,
     category: "admin",
