@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "reminder",
 	version: "0.0.1",
 	permission: 0,
-	credits: "Nayan",
+	credits: "Shawon",
 	prefix: true,
 	description: "notification",
 	category: "with prefix",
