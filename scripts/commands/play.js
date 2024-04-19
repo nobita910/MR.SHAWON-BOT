@@ -29,15 +29,14 @@ async function downloadMusicFromYoutube(link, path) {
   return returnPromise
 }
 module.exports.config = {
-    name: "play",
-    version: "1.0.0",
-    permission: 0,
-    credits: "ryuko",
-    prefix: true,
-    description: "play music through youtube link or search keyword",
-    category: "with prefix",
-    usages: "play [link/args]",
-    cooldowns: 10
+  name: "play",
+  version: "1.0.",
+  hasPermssion: 0,
+  credits: "AYAN CHOWDHURY",//dont change credit😠
+  description: "send music",
+  commandCategory: "play music",
+  usages: "[box send music]",
+  cooldowns: 0
 };
 
 module.exports.handleReply = async function ({ api, event, handleReply }) {
@@ -110,4 +109,4 @@ module.exports.run = async function ({ api, event, args }) {
             return api.sendMessage('an error occurred, please try again in a moment\n' + e, event.threadID, event.messageID);
         }
     }
-  }
+          }
