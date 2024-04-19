@@ -5,7 +5,7 @@ module.exports = {
         version: "1.0.1",
         prefix: false,
 	permssion: 0,
-	credits: "nayan", 
+	credits: "শাওন", 
 	description: "Fun",
 	category: "no prefix",
 	usages: "😒",
